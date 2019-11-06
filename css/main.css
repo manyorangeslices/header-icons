@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   background-color: white;
-  font-family: "Merriweather";
+  font-family: Merriweather;
   line-height: 1.5;
 }
 
@@ -26,11 +26,12 @@ body {
 
 h1 {
   text-align: center;
-  font-family: "Merriweather";
+  font-family: Merriweather;
   color: #fff;
   display: block;
-  padding: .1em;
+  padding: 0;
   margin: 0;
+  position: relative;
 }
 
 nav ul {
@@ -40,6 +41,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  border-top: 1px solid #a63f38;
 }
 
 nav li {
@@ -55,12 +57,29 @@ nav li {
   color: #fff;
   text-decoration: none;
   text-align: center;
-  font-family: "Merriweather";
+  font-family: Merriweather,bold;
+  font-size: 1.125rem;
+
 }
+
 .grain {
-  align-items: baseline;
+  float: left;
   max-width: 40px;
+  align-items: stretch;
+  display: flex;
 }
+
+.grain2 {
+  float: right;
+  max-width: 40px;
+  display: flex;
+  align-self: flex-end;
+
+}
+
 nav a:hover {
+  background-color: #a63f38;
   color: #fff;
 }
+
+.nav li:first-child a {
